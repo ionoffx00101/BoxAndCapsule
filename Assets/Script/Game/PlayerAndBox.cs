@@ -31,6 +31,13 @@ public class PlayerAndBox : MonoBehaviour
     public VirtualJoystick joyStick;
     /* JoyStick 추가해본것 - 끝 */
 
+    private void Awake ()
+    {
+        // 박스들이 겹쳐버림
+        //Physics.IgnoreLayerCollision(LayerMask.NameToLayer("BoxLayer") , LayerMask.NameToLayer("BoxLayer") , true);
+    }
+
+
     private void OnCollisionEnter (Collision other)
     {
         // other에는 충돌한 객체가 들어있다.
