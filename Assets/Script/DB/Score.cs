@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SqliteTest : MonoBehaviour {
+public class Score : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
